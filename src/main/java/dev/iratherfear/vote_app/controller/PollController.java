@@ -28,7 +28,6 @@ public class PollController {
    
     @GetMapping
     public List<PollRequest> getAllPolls() {
-        System.out.println("Call for request of all poll!!");
         return pollService.getAllPolls();
     }
 
@@ -39,7 +38,6 @@ public class PollController {
 
     @PostMapping
     public void createAPoll(@RequestBody PollRequest pollRequest) {
-        System.out.println("Creating a new poll with request: " + pollRequest);
         pollService.createTask(pollRequest);
     }
 

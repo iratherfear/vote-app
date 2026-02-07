@@ -67,7 +67,6 @@ public class PollService {
     }
 
     public void vote(Vote vote) {
-        System.out.println("Voting for " + vote);
         VoteOption voteOption = voteOptionRepository.findById(vote.getVoteOptionId()).orElseThrow();
         long pollId = vote.getPollId();
 
