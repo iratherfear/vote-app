@@ -7,5 +7,5 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Vote {
     private Long pollId;
-    private Long optionId;
+    private Long voteOptionId;
 }
